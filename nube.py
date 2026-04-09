@@ -12,12 +12,15 @@ def plot_cloud(wordcloud):
     plt.axis("off")
     plt.show()
 
+def limpiar_texto(texto):
+    texto = re.sub(r'==.*?==+', '', texto)
+    texto = texto.replace('\n', ' ')
+    return texto
+
 def crear_nube(x):
     wikipedia.set_lang("es")
     wiki = wikipedia.page(x)
-    text = wiki.content
-    text = re.sub(r'==.*?==+', '', text)
-    text = text.replace('\n', ' ')
+    text = limpiar_texto(wiki.content)
 
     wordcloud = WordCloud(
         width=3000,
