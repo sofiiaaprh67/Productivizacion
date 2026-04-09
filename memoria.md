@@ -21,9 +21,10 @@ Se ha creado un entorno conda llamado `nube_wiki`.
 2. Instalación de librerías necesarias.
 3. Desarrollo del script `nube.py`.
 4. Inicialización del repositorio Git.
-5. Uso de ramas `devel` y `features_ejemplos`.
+5. Uso de ramas `master`, `devel` y `features_ejemplos`.
 6. Realización de merges entre ramas.
-7. Exportación del entorno a `environment.yml`.
+7. Resolución de conflicto final en `master`.
+8. Exportación del entorno a `environment.yml`.
 
 ## Funcionamiento
 La función `crear_nube(x)`:
