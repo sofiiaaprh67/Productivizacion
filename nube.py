@@ -34,5 +34,5 @@ def crear_nube(x):
 
     plot_cloud(wordcloud)
 
-crear_nube("Aranjuez")
+crear_nube("Madrid")
 crear_nube("Toledo")
